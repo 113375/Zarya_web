@@ -1,0 +1,8 @@
+name: zaryaweb
+recipe: lamp
+config:
+  webroot: public
+  php: 8.2
+services:
+  phpmyadmin:
+    type: phpmyadmin
