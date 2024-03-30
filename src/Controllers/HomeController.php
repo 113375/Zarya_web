@@ -2,10 +2,14 @@
 
 namespace App\Controllers;
 
-class HomeController
+use App\Core\Controller\Controller;
+use App\Core\View\View;
+
+class HomeController extends Controller
 {
     public function index(): void
     {
-        require_once APP_PATH.'/view/home.php';
+        $this->view("home");
+
     }
 }

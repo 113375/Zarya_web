@@ -2,6 +2,8 @@
 
 namespace App\Core\Routing;
 
+use App\Core\View\View;
+
 class Router
 {
     private array $routes = [
@@ -9,7 +11,7 @@ class Router
         'POST' => [],
     ];
 
-    public function __construct()
+    public function __construct(private View $view)
     {
         $this->initRoutes();
     }
@@ -25,14 +27,18 @@ class Router
 
     private function notFound()
     {
-        require_once APP_PATH.'/view/404.php';
+        require_once APP_PATH.'/views/pages/404.php';
         exit;
     }
 
     private function callByController(RouteInterface $route)
     {
+        /**
+         * @var Controller $controller; 
+         */
         [$controller, $action] = $route->getAction();
         $controller = new $controller();
+        call_user_func([$controller, 'setView'], $this->view);
         call_user_func([$controller, $action]);
     }
 
