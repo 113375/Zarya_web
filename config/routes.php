@@ -1,11 +1,12 @@
 <?php
 
-use App\Controllers\HomeController;
+use App\Controllers\AboutController;
 use App\Core\Routing\Route;
 
 return [
-    Route::get('/home', [HomeController::class, 'index']),
+    Route::get('/about', [AboutController::class, 'index']),
     Route::get('/', function () {
-        require_once APP_PATH.'/views/pages/main.php';
+        header('Location: '. "/about");;
     }),
+    
 ];
