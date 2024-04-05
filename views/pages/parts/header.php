@@ -6,4 +6,18 @@
   <link rel="stylesheet" href="/resources/css/index.css">
 </head>
 <body>
-    header тут будет
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            лого 
+        </div>
+        <div class="releases">
+            <a href="/">Творчество</a>
+        </div>
+        <div class="concerts">
+            <a href="/">Концерты</a>
+        </div>
+        <div class="photo">
+            <a href="/">Фото</a>
+        </div>
+    </div>
