@@ -10,6 +10,6 @@ class AboutController extends Controller
     {
         self::header();
         $this->view("about");
-        $this->connerctJSFile("index");
+        self::footer();
     }
 }

@@ -5,7 +5,6 @@ namespace App\Core\Container;
 use App\Core\Http\Request;
 use App\Core\Routing\Router;
 use App\Core\View\View;
-use App\Core\JS\JS;
 
 class Container
 {
@@ -14,7 +13,6 @@ class Container
 
     public readonly Router $router;
     
-    public readonly JS $js;
 
     public function __construct()
     {
@@ -26,6 +24,5 @@ class Container
         $this->request = Request::createFromGlobals();
         $this->view = new View();
         $this->router = new Router($this->view);
-        $this->js = new JS();
     }
 }

@@ -37,7 +37,6 @@ class Router
         $controller = new $controller();
         call_user_func([$controller, 'setView'], $this->view);
         call_user_func([$controller, $action]);
-        //TODO важное место в коде
     }
 
     private function callByClosure(RouteInterface $route)
