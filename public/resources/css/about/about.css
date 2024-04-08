@@ -1,0 +1,36 @@
+.band-img{
+    position: relative;
+
+}
+
+
+.band-img::before{
+    background-image: url("../../img/band.jpg") ;
+    background-size: cover;
+     background-position: center;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    filter: brightness(100%);
+    /* animation: bright 1s linear both; */
+    /* animation-timeline: bright; */
+    /* margin-top: 170px;   */
+    content: ' ';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: -1;
+}
+
+@keyframes bright {
+    to {
+        filter: brightness(0%)
+    }
+    
+}
+
+@scroll-timeline bright{
+    time-range: 1s;
+}
