@@ -1,27 +1,33 @@
 .band-img{
     position: relative;
     filter: brightness(100%);
+    background-color: #282828;
+    /* animation: bright 1s; */
+    height: 900px;
+    z-index: -1;
+
 }
 
 
 .band-img::before{
     background-image: url("../../img/band.jpg") ;
     background-size: cover;
-     background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
     content: ' ';
-    height: 100%;
     left: 0;
     position: fixed;
+    height: 100%;
     top: 0;
     width: 100%;
     will-change: transform;
     z-index: -1;
+
 }
 
 @keyframes bright {
     to {
-        filter: brightness(0%)
+        filter: brightness(100%)
     }
     
 }
