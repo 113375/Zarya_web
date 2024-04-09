@@ -1,6 +1,6 @@
 .band-img{
     position: relative;
-
+    filter: brightness(100%);
 }
 
 
@@ -8,12 +8,7 @@
     background-image: url("../../img/band.jpg") ;
     background-size: cover;
      background-position: center;
-    /* background-attachment: fixed; */
     background-repeat: no-repeat;
-    filter: brightness(100%);
-    /* animation: bright 1s linear both; */
-    /* animation-timeline: bright; */
-    /* margin-top: 170px;   */
     content: ' ';
     height: 100%;
     left: 0;
