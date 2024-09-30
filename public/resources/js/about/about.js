@@ -9,7 +9,7 @@ let scroll = function(){
         let band_img = this.document.getElementsByClassName("band-img")[0];
         band_img.style.filter = `brightness(${100 - brightness}%)`
         let elementStyle = getComputedStyle(band_img, "::before")
-        console.log(elementStyle);
+        // console.log(elementStyle);
       });  
 }
 

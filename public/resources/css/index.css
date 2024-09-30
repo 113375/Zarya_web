@@ -19,9 +19,9 @@ body{
     justify-content: space-between;
     color: white;
     background-color: black;
-    font-size: 24px;
-    padding-top: 44px;
-    padding-bottom: 44px;
+    font-size: 22px;
+    padding-top: 34px;
+    padding-bottom: 34px;
     padding-left: 92px;
     padding-right: 92px;
 }
@@ -67,4 +67,28 @@ body{
 .footer{
     background-color: black;
     color: white;
+    margin-top: 5000px;
+    
+}
+
+.footer-text{
+    display: block;
+    margin-left: auto;
+    width:min-content;
+    height: min-content;
+    padding: 20px 92px;
+}
+
+.block {
+    display: flex;
+}
+.link{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 30px;
+}
+
+.white-line{
+    height: 4px;
+    background-color: #fff;
 }

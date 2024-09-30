@@ -1,4 +1,7 @@
 <div class="footer">
+    <div class="white-line">
+        
+    </div>
     <div class="footer-text">
         <div class="block tg">
             <div class="link tg">
